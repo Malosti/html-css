@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            background-color: rgb(180, 240, 180);
+        }
+        header{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(153, 112, 102);
+            margin: 10px
+        }
+        header > h1{
+            color: rgb(17, 65, 17);
+            padding: 5px;
+        }
+        nav{
+            padding: 3px;
+            box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.678);
+        }
+        nav > a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            border-radius: 10px;
+            background-color: sandybrown;
+            margin: 0px 200px;
+            padding: 10px;
+            text-align: justify;
+        }
+        article > aside {
+            text-align: right;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+   <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+   </header>
+   
+   <main>
+    <section id="assuntos"></section>
+    <section>
+        <article>
+            <h2>Noticia sobre o Brasil</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur ipsa a, consequatur nostrum aliquid ab nemo laudantium assumenda dolores blanditiis magnam enim qui nesciunt minus ad repellendus veritatis officia!</p>
+            <aside>Guilherme</aside>
+        </article>
+    </section>
+   </main>
+
+   <footer>
+    <p>Desenvolvido pelo Guilherme</p>
+   </footer>
+</body>
+</html>
