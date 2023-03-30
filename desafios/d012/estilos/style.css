@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 *{
     margin: 0;
@@ -27,12 +29,14 @@ header{
 
 header > h1{
     font-family: var(--fonte2);
-    font-size: 10vh;
+    font-size: 10vw;
+    font-variant: small-caps;
     padding-top: 50px;
 }
 
 header > p{
     padding-bottom: 50px;
+    margin: 0;
 }
 
 a{
@@ -68,27 +72,26 @@ section.normal{
 
 section.imagem{
     color: var(--cor-titulo);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.514);
-    width: 45%;
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
     padding: 5px;
 }
 
 #img001{
     background-image: url(../imagens/background001.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #img002{
     background-image: url(../imagens/background002.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
 }
 
 footer{
@@ -96,4 +99,9 @@ footer{
     color: var(--cor-titulo);
     text-align: center;
     padding: 10px;
+}
+
+footer > p{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
