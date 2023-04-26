@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
+                <img src="imagens/pexels-suzy-hazelwood-1629236.jpg" alt="imagem-ilustrativa-pattern">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novemente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
-                    
+                    <input type="email" name="email" id="iemail" required>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20">
                 </form>
+                <input type="submit" value="Entrar">
+                <input type="submit" value="Esqueci a senha">
             </div>
         </section>
     </main>
